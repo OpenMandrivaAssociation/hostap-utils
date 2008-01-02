@@ -11,6 +11,7 @@ Requires:	wireless-tools
 Provides:	hostap
 Obsoletes:	hostap
 Epoch:		0
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 This is a Linux driver for wireless LAN cards based on Intersil's Prism2/2.5/3
