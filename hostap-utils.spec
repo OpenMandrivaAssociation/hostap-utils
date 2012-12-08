@@ -1,7 +1,7 @@
 Summary:	Utility programs for Host AP driver for Intersil Prism2/2.5/3
 Name:		hostap-utils
 Version:	0.4.7
-Release:	%mkrel 8
+Release:	%mkrel 10
 License:	GPL
 Group:		System/Configuration/Networking
 URL:		http://hostap.epitest.fi/
@@ -61,4 +61,62 @@ rm -rf %{buildroot}
 %{_sbindir}/prism2_srec
 %{_sbindir}/split_combined_hex
 
+
+
+
+%changelog
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0:0.4.7-8mdv2011.0
++ Revision: 665415
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0:0.4.7-7mdv2011.0
++ Revision: 605859
+- rebuild
+
+* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 0:0.4.7-6mdv2010.1
++ Revision: 522847
+- rebuilt for 2010.1
+
+* Wed Sep 02 2009 Christophe Fergeau <cfergeau@mandriva.com> 0:0.4.7-5mdv2010.0
++ Revision: 425148
+- rebuild
+
+* Tue Dec 23 2008 Oden Eriksson <oeriksson@mandriva.com> 0:0.4.7-4mdv2009.1
++ Revision: 317986
+- use %%ldflags
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 0:0.4.7-3mdv2009.0
++ Revision: 221213
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0:0.4.7-2mdv2008.1
++ Revision: 126728
+- kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 0.4.7-2mdv2007.1
++ Revision: 145535
+- Import hostap-utils
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 0:0.4.7-2mdv2007.1
+- use the %%mrel macro
+
+* Sun Jan 08 2006 Pascal Terjan <pterjan@mandriva.org> 0:0.4.7-1mdk
+- 0.4.7
+
+* Sun Sep 25 2005 David Walluck <walluck@mandriva.org> 0:0.4.0-1mdk
+- 0.4.0
+- mark hostap_cs.conf as %%config
+- fix CC and CFLAGS
+
+* Wed Mar 09 2005 Laurent Culioli <laurent@mandrake.org> 0.3.7-1mdk
+- 0.3.7
+
+* Wed Aug 11 2004 Laurent Culioli <laurent@mandrake.org> 0.2.4-1mdk
+- 0.2.4
+- provides/obsoletes hostap
+- split hostap in 2 packages ( hostap-utils & hostapd )
 
