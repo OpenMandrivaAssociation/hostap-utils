@@ -2,13 +2,12 @@ Summary:	Utility programs for Host AP driver for Intersil Prism2/2.5/3
 Name:		hostap-utils
 Epoch:		0
 Version:	0.4.7
-Release:	19
+Release:	20
 License:	GPLv2
 Group:		System/Configuration/Networking
 Url:		http://hostap.epitest.fi/
 Source0:	http://hostap.epitest.fi/releases/hostap-utils-%{version}.tar.bz2
 Source1:	hostap_cs.conf
-Requires:	wireless-tools
 Provides:	hostap
 
 %description
@@ -22,10 +21,10 @@ possible also in IBSS.
 This packages contains binary utilities for use with hostap. 
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%make CC="%{__cc}" CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
+%make_build CC="%{__cc}" CFLAGS="%{optflags}" LDFLAGS="%{build_ldflags}"
 
 %install
 install -d -m 755 %{buildroot}%{_sbindir}
