@@ -5,7 +5,7 @@ Version:	0.4.7
 Release:	21
 License:	GPLv2
 Group:		System/Configuration/Networking
-Url:		http://hostap.epitest.fi/
+Url:		https://hostap.epitest.fi/
 Source0:	http://hostap.epitest.fi/releases/hostap-utils-%{version}.tar.bz2
 Source1:	hostap_cs.conf
 Provides:	hostap
