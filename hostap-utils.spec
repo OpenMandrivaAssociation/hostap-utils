@@ -10,6 +10,7 @@ Source0:	http://hostap.epitest.fi/releases/hostap-utils-%{version}.tar.bz2
 Source1:	hostap_cs.conf
 Provides:	hostap
 
+BuildRequires:	make
 %description
 This is a Linux driver for wireless LAN cards based on Intersil's Prism2/2.5/3
 chipset. The driver supports a so called Host AP mode, i.e., it takes care of 
